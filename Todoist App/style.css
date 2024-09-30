@@ -1,0 +1,133 @@
+/* google fonts importing  */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-black: #131313;
+  --beige: #faedcd;
+  --dark-red: #bf1235;
+
+  --ff-caveat-brush: "Caveat Brush", sans-serif, cursive;
+  --ff-bitter: "Bitter", serif, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-black);
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo-wrapper {
+  width: 100%;
+  height: 35dvh;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.floating {
+  position: absolute;
+  z-index: -1;
+}
+.flt-right-arr {
+  top: 60px;
+  left: 270px;
+}
+.flt-right-bulb {
+  top: 30px;
+  left: 310px;
+}
+.flt-left-arr {
+  top: 140px;
+  left: 65px;
+}
+.flt-left-calendar {
+  top: 175px;
+  left: 40px;
+  transform: scale(1.2);
+}
+.logo {
+  color: var(--beige);
+  font-family: var(--ff-caveat-brush);
+  font-weight: 100;
+  font-size: 4.5rem;
+}
+.tagline {
+  color: var(--beige);
+  font-family: var(--ff-caveat-brush);
+  font-weight: 100;
+  font-size: 1.75rem;
+  margin-top: -15px;
+}
+span {
+  color: var(--dark-red);
+}
+.intro-wrapper {
+  width: 100%;
+  height: 65dvh;
+  background-color: var(--beige);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  /* border: 2px solid lightgreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2em;
+  gap: 1em;
+}
+.greeting {
+  font-family: var(--ff-caveat-brush);
+  color: var(--primary-black);
+  font-size: 2rem;
+  margin-top: 0.5em;
+}
+.description {
+  width: 100%;
+  font-family: var(--ff-bitter);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+.user-name {
+  width: 100%;
+  display: flex;
+  gap: 0.6em;
+  /* border: 2px solid maroon; */
+  margin-top: 0.5em;
+}
+
+.user-name input {
+  background-color: var(--primary-black);
+  color: var(--beige);
+  border: none;
+  font-family: var(--ff-bitter);
+  font-size: 0.9rem;
+  padding: 1em 1.2em;
+  border-radius: 1000px;
+  flex: 1;
+}
+.user-name input::placeholder {
+  color: var(--beige);
+  opacity: 0.7;
+}
+.get-started-btn {
+  background-color: var(--primary-black);
+  color: var(--beige);
+  border: none;
+  font-family: var(--ff-bitter);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border-radius: 1000px;
+}
+
