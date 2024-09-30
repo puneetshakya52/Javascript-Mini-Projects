@@ -1,0 +1,117 @@
+/* google fonts importing  */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-black: #131313;
+  --beige: #faedcd;
+  --dark-red: #bf1235;
+
+  --ff-caveat-brush: "Caveat Brush", sans-serif, cursive;
+  --ff-bitter: "Bitter", serif, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-black);
+}
+
+.main-wrapper2{
+  width: 100%;
+  height: 100dvh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.hello-user{
+  width: 100%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 2em;
+}
+.hello{
+  font-family: var(--ff-caveat-brush);
+  color: var(--beige);
+  font-size: 3.5rem;
+}
+.name{
+  font-family: var(--ff-caveat-brush);
+  color: var(--beige);
+  font-size: 4rem;
+  margin-top: -25px;
+}
+.create-task{
+  width: 100%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  justify-content: center;
+  padding: 0 2em;
+  position: relative;
+}
+.task-name{
+  background-color: var(--beige);
+  color: var(--primary-black);
+  border: none;
+  font-family: var(--ff-bitter);
+  font-size: 0.9rem;
+  padding: 1em 1.2em;
+  border-radius: 1000px;
+  flex: 1;
+}
+.task-name::placeholder{
+  color: var(--primary-black);
+  opacity: 0.7;
+}
+.create-task-btn{
+  background-color: var(--primary-black);
+  color: var(--beige);
+  border: none;
+  font-family: var(--ff-bitter);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border-radius: 1000px;
+  position: absolute;
+  padding: .75em 1em;
+  top: 3.5px;
+  left: 270px;
+}
+.day-date{
+  font-family: var(--ff-bitter);
+  color: var(--beige);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.no-tasks-yet-wrapper{
+  width: 100%;
+  height: 65dvh;
+  background-color: var(--beige);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 1em;
+}
+.illustration-heading{
+  font-family: var(--ff-caveat-brush);
+  font-size: 2.5rem;
+}
+.illustration-para{
+  font-family: var(--ff-bitter);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+  text-wrap: pretty;
+}
