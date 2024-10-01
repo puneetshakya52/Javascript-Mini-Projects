@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mainscreen.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mainscreen.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main-wrapper2">
+      <div class="hello-user">
+        <p class="hello">Hello,</p>
+        <p class="name">Puneet</p>
+        <p class="day-date">Saturday, <span>28</span> SEP</p>
+      </div>
+
+      <div class="create-task">
+        <input class="task-name" type="text" placeholder="Task goes here" />
+        <button class="create-task-btn">Create Task</button>
+      </div>
+
+      <!-- container when user loads for the first time  -->
+
+      <div class="no-tasks-yet-wrapper">
+        <img
+          src="images/no task yet illustration.svg"
+          alt="no task yet"
+        />
+        <p class="illustration-heading">No Tasks Yet!</p>
+        <p class="illustration-para">
+          Start by adding a new task to get organized.
+        </p>
+      </div>
+
+      <!-- tasks container when new task is created -->
+
+      <div class="task-container hidden">
 
 
-  <main class="main-wrapper2">
+        <div class="bottom-btn">
+          <img class="completeall-btn" src="images/complete all.svg" alt="complete all btn" />
+          <img class="deleteall-btn" src="images/delete all.svg" alt="delete all btn" />
+        </div>
+      </div>
 
-    <div class="hello-user">
-      <p class="hello">Hello,</p>
-      <p class="name">Puneet</p>
-      <p class="day-date">Saturday, <span>28</span> SEP</p>
-    </div>
+      <!-- block when all taks completed button is clicked  -->
 
-    <div class="create-task">
-      <input class="task-name" type="text" placeholder="Task goes here">
-      <button class="create-task-btn">Create Task</button>
-    </div>
-    <div class="no-tasks-yet-wrapper">
-      <img src="images/no task yet illustration.svg" alt="no task yet">
-      <p class="illustration-heading">No Tasks Yet!</p>
-      <p class="illustration-para">Start by adding a new task to get organized.</p>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
+      <div class="all-tasks-done hidden">
+        <img
+          src="images/all task completed illustration.svg"
+          alt="all task completed"
+        />
+        <p  class="illustration-heading">All Tasks Done!</p>
+        <p  class="illustration-para">
+          Great job! Add new tasks whenever you're ready.
+        </p>
+      </div>
+
+      <!-- block when all task deleted button is clicked  -->
+
+      <div class="all-tasks-deleted hidden">
+        <img
+          src="images/all task deleted illustration.svg"
+          alt="all task completed"
+        />
+        <p  class="illustration-heading">All Tasks Deleted!</p>
+        <p  class="illustration-para">
+          Your list is clear. Start fresh by adding new tasks.
+        </p>
+      </div>
+    </main>
+    <script defer src="script.js"></script>
+  </body>
 </html>
